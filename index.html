@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J2K Holdings</title>
+<meta name="description" content="J2K Holdings builds AI software for legal teams that recover unpaid receivables.">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --ink: #1a1d24;
+    --muted: #5d6370;
+    --faint: #8a909c;
+    --line: #e6e3dc;
+    --accent: #1b365d;
+    --accent-soft: #eef2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121418;
+      --surface: #1a1d23;
+      --ink: #eceef2;
+      --muted: #a9afbb;
+      --faint: #7d8492;
+      --line: #2b2f37;
+      --accent: #9db8de;
+      --accent-soft: #1f2836;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121418;
+    --surface: #1a1d23;
+    --ink: #eceef2;
+    --muted: #a9afbb;
+    --faint: #7d8492;
+    --line: #2b2f37;
+    --accent: #9db8de;
+    --accent-soft: #1f2836;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 28px 0; border-bottom: 1px solid var(--line); }
+  .brand { font-weight: 700; letter-spacing: 0.02em; font-size: 18px; }
+  .brand span { color: var(--faint); font-weight: 500; }
+  .hero { padding: 72px 0 56px; }
+  .hero h1 {
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.2;
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+    max-width: 18em;
+  }
+  .hero p { margin: 0; color: var(--muted); max-width: 36em; }
+  .ko { color: var(--faint); font-size: 15px; margin-top: 6px; }
+  .hero .ko { font-size: 16px; margin-top: 14px; }
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin: 0 0 4px; }
+  h2 + .ko { margin: 0 0 24px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 28px;
+  }
+  .card h3 { margin: 0; font-size: 21px; }
+  .tag {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 999px;
+    padding: 3px 12px;
+  }
+  ul.points { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 16px; }
+  ul.points li { padding-left: 18px; position: relative; }
+  ul.points li::before {
+    content: ""; position: absolute; left: 0; top: 0.72em;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
+  }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .rule { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+  .rule h3 { margin: 0 0 6px; font-size: 17px; }
+  .rule p { margin: 0; color: var(--muted); font-size: 16px; }
+  .plain p { margin: 0; max-width: 40em; color: var(--muted); }
+  .contact a { color: var(--accent); font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; }
+  footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--faint); font-size: 14px; }
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 16px; }
+    .hero { padding: 48px 0 40px; }
+    .grid { grid-template-columns: 1fr; }
+    .card { padding: 22px; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap"><div class="brand">J2K Holdings <span>· 제이투케이홀딩스</span></div></div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>AI software for legal teams that recover unpaid receivables.</h1>
+      <p>We help law firms decide which lawful next step is most likely to get a debtor to pay, and we learn from every case.</p>
+      <p class="ko">미수금을 회수하는 법률 실무팀을 위한 AI 소프트웨어를 만듭니다.</p>
+    </div>
+
+    <section>
+      <h2>What we're building</h2>
+      <p class="ko">만들고 있는 것</p>
+      <div class="card">
+        <h3>Recovery navigator for law firms</h3>
+        <span class="tag">In development · 개발 중</span>
+        <ul class="points">
+          <li>For each case, it suggests which lawful reminder (a letter, a text message, a call, or a formal notice) is most likely to lead to payment.
+            <div class="ko">사건마다 어떤 적법한 안내(편지·문자·전화·내용증명)가 실제 변제로 이어질지 제안합니다.</div></li>
+          <li>It records what actually happened, so the next suggestion is better.
+            <div class="ko">실제로 어떻게 됐는지 기록해서 다음 제안이 나아집니다.</div></li>
+          <li>We measure one thing first: the net amount that reaches the creditor's own account.
+            <div class="ko">가장 먼저 보는 숫자는 채권자 계좌에 실제로 들어온 순회수액입니다.</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>How we build it</h2>
+      <p class="ko">만드는 원칙</p>
+      <div class="grid">
+        <div class="rule">
+          <h3>Attorneys decide</h3>
+          <p>Every message is reviewed by a licensed attorney before it is sent.</p>
+          <p class="ko">모든 문구는 보내기 전에 변호사가 검토합니다.</p>
+        </div>
+        <div class="rule">
+          <h3>Numbers are calculated, not generated</h3>
+          <p>Amounts come from a rule-based engine, never from the AI model.</p>
+          <p class="ko">금액은 AI가 아니라 규칙으로 계산합니다.</p>
+        </div>
+        <div class="rule">
+          <h3>Every fact points to its source</h3>
+          <p>Facts drawn from rulings and contracts are shown with the original page they came from.</p>
+          <p class="ko">판결문·계약서에서 뽑은 사실은 원문 위치와 함께 보여 줍니다.</p>
+        </div>
+        <div class="rule">
+          <h3>Software only</h3>
+          <p>J2K provides software to law firms. We do not collect debts ourselves.</p>
+          <p class="ko">J2K는 법무법인에 소프트웨어를 공급하며, 직접 추심하지 않습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="plain">
+      <h2>How we work</h2>
+      <p class="ko">일하는 방식</p>
+      <p>We run J2K itself on AI agents. Civitas, our internal operating system built on Claude, carries context, decisions and follow-ups between our team and our agents.</p>
+      <p class="ko">J2K 자체도 AI 에이전트로 운영합니다. Claude 위에 만든 내부 운영 체계 civitas가 팀과 에이전트 사이에서 맥락·결정·후속 일을 이어 줍니다.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p class="ko">연락처</p>
+      <p><a href="mailto:jhyim@j2kho.com">jhyim@j2kho.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 J2K Holdings. All rights reserved.</div>
+  </footer>
+</body>
+</html>
